@@ -1,0 +1,16 @@
+set env Name=Value - sets environment variable in gdb for executable
+r argv[1]/text - runs an executable with an arguement
+b *0xhexaddress - Sets a breakpoint at a hexadecimal address in the program
+display/s - displays a register with it's value in string format
+set pagination off - turns single stepping off so you don't have to keep pressing enter
+set logging on - logs all instructions to terminal
+set logging redirect on - redirects all logs in terminal to a file called gdb.txt
+set disassembly-flavor at&t/intel - changes the assembly syntax being outputed to terminal
+show disassembly-flavor - shows the current assembly syntax being outputed
+
+
+while 1
+>si
+>x/i $pc
+>end
+while true step through the program 1 instruction at a time using the si (single instruction) command, and display that instruction to terminal through the program counter
