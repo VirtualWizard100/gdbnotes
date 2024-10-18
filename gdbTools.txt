@@ -7,7 +7,7 @@ set logging on - logs all instructions to terminal
 set logging redirect on - redirects all logs in terminal to a file called gdb.txt
 set disassembly-flavor at&t/intel - changes the assembly syntax being outputed to terminal
 show disassembly-flavor - shows the current assembly syntax being outputed
-
+disassemble/(m/r) - disassemble the instruction(s) to where you can view them by the source code (m), or the source code plus the raw encoding (r)
 
 while 1
 >si
